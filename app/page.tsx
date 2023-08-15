@@ -11,6 +11,8 @@ export default async function Page() {
   const data = await getNewsList({
     limit: TOP_NEWS_LIMIT,
   });
+  console.log(1, process.env.MICROCMS_API_KEY);
+  console.log(111);
   return (
     <>
       <section className={styles.top}>
