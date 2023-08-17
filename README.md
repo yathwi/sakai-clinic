@@ -15,7 +15,7 @@ Node.js 18 以上
 
 ```
 MICROCMS_API_KEY=xxxxxxxxxx
-NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN=xxxxxxxxxx
+MICROCMS_SERVICE_DOMAIN=xxxxxxxxxx
 BASE_URL=xxxxxxxxxx
 HUBSPOT_PORTAL_ID=xxxxxxxx
 HUBSPOT_FORM_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
@@ -24,7 +24,7 @@ HUBSPOT_FORM_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 `MICROCMS_API_KEY`  
 microCMS 管理画面の「サービス設定 > API キー」から確認することができます。
 
-`NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN`  
+`MICROCMS_SERVICE_DOMAIN`  
 microCMS 管理画面の URL（https://xxxxxxxx.microcms.io）の xxxxxxxx の部分です。
 
 `BASE_URL`
