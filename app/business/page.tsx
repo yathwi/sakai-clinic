@@ -10,31 +10,31 @@ type Props = {
 };
 
 export const revalidate = 60;
-
 export default async function Page({ searchParams }: Props) {
   const data = await getBusinessList({
     draftKey: searchParams.dk,
   });
+
   return (
-    <div className={styles.container}>
+    <div className="container">
       {data.contents.length === 0 ? (
-        <p className={styles.empty}>事業内容が登録されていません。</p>
+        <p className="mb-10">事業内容が登録されていません。</p>
       ) : (
         <ul>
           {data.contents.map((business) => (
-            <li key={business.id} className={styles.list}>
-              <dl className={styles.flex}>
-                <dt className={styles.name}>
+            <li key={business.id} className="flex items-start gap-10 mb-40">
+              <dl className="flex-grow">
+                <dt className="mb-6">
                   <Image
                     src={business.logo?.url as string}
                     alt=""
                     width={business.logo?.width}
                     height={business.logo?.height}
-                    className={styles.logo}
+                    className="h-10 w-auto"
                   />
                 </dt>
-                <dd className={styles.description}>{business.description}</dd>
-                <dd className={styles.action}>
+                <dd className="text-sm">{business.description}</dd>
+                <dd className="flex mt-10">
                   <ButtonLink href={business.link} isExternal>
                     サービスサイトへ
                   </ButtonLink>
@@ -45,17 +45,17 @@ export default async function Page({ searchParams }: Props) {
                 alt=""
                 width={business.image?.width}
                 height={business.image?.height}
-                className={styles.image}
+                className="w-60 h-auto rounded-lg"
               />
             </li>
           ))}
         </ul>
       )}
-      <div className={styles.footer}>
-        <h2 className={styles.message}>We are hiring</h2>
+      <footer className="flex flex-col items-center border-t pt-10 text-center gap-6">
+        <h2 className="text-4xl font-bold">We are hiring</h2>
         <p>私たちは共にチャレンジする仲間を募集しています。</p>
         <ButtonLink href="">採用情報へ</ButtonLink>
-      </div>
+      </footer>
     </div>
   );
 }

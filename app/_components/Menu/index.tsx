@@ -13,27 +13,27 @@ export default function Menu() {
     <div>
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.items}>
-          <li>
+          <li className=" hover:text-[#343434]">
             <Link href="/news" onClick={close}>
               ニュース
             </Link>
           </li>
-          <li>
+          <li className=" hover:text-[#343434]">
             <Link href="/business" onClick={close}>
               事業内容
             </Link>
           </li>
-          <li>
+          <li className=" hover:text-[#343434]">
             <Link href="/members" onClick={close}>
               メンバー
             </Link>
           </li>
-          <li>
+          <li className=" hover:text-[#343434]">
             <Link href="" onClick={close}>
               採用情報
             </Link>
           </li>
-          <li>
+          <li className=" hover:text-[#343434]">
             <Link href="/contact" onClick={close}>
               お問い合わせ
             </Link>

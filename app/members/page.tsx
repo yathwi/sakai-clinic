@@ -10,40 +10,41 @@ type Props = {
 };
 
 export const revalidate = 60;
-
 export default async function Page({ searchParams }: Props) {
   const data = await getMembersList({
     draftKey: searchParams.dk,
   });
+
   return (
-    <div className={styles.container}>
+    <div className="container mx-auto py-10">
       {data.contents.length === 0 ? (
-        <p className={styles.empty}>メンバーが登録されていません。</p>
+        <p className="mb-10">メンバーが登録されていません。</p>
       ) : (
         <ul>
           {data.contents.map((member) => (
-            <li key={member.id} className={styles.list}>
+            <li key={member.id} className="flex items-start gap-10 mb-20">
               <Image
                 src={member.image?.url as string}
                 alt=""
                 width={member.image?.width}
                 height={member.image?.height}
-                className={styles.image}
+                className="w-60 h-auto rounded-lg"
               />
               <dl>
-                <dt className={styles.name}>{member.name}</dt>
-                <dd className={styles.position}>{member.position}</dd>
-                <dd className={styles.profile}>{member.profile}</dd>
+                <dt className="text-xl font-bold mb-2">{member.name}</dt>
+                <dd className="mb-2">{member.position}</dd>
+                <dd className="text-sm">{member.profile}</dd>
               </dl>
             </li>
           ))}
         </ul>
       )}
-      <div className={styles.footer}>
-        <h2 className={styles.message}>We are hiring</h2>
+
+      <footer className="flex flex-col items-center border-t pt-10 text-center gap-6">
+        <h2 className="text-4xl font-bold">We are hiring</h2>
         <p>私たちは共にチャレンジする仲間を募集しています。</p>
         <ButtonLink href="">採用情報へ</ButtonLink>
-      </div>
+      </footer>
     </div>
   );
 }

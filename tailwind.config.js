@@ -57,7 +57,8 @@ module.exports = {
     base: '1rem', // 16px
     lg: '1.5rem', // 24px
     xl: '2rem', // 32px
-    '2xl': '2.25rem', // 36px
+    '2xl': '2.5rem', // 36px
+    '3xl': '3rem',
   },
   screens: {
     ph: '320px',
