@@ -12,7 +12,7 @@ export default function NewsListItem({ news }: Props) {
   return (
     <li className="border-b border-gray-200 last:border-b-0">
       <Link className="flex items-start gap-10 py-6" href={`/news/${news.id}`}>
-        {news.thumbnail ? (
+        {/* {news.thumbnail ? (
           <Image
             src={news.thumbnail?.url}
             alt=""
@@ -28,9 +28,9 @@ export default function NewsListItem({ news }: Props) {
             width={1200}
             height={630}
           />
-        )}
+        )} */}
         <dl>
-          <dt className="text-lg font-bold mb-2">{news.title}</dt>
+          <dt className="text-lg font-bold ">{news.title}</dt>
           <dd className="flex items-center gap-4">
             <Category category={news.category} />
             <PublishedDate date={news.publishedAt || news.createdAt} />

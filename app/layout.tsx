@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
-    title: data.title,
+    title: '太光設備株式会社',
     description: data.description,
     openGraph: {
       title: data.ogTitle,

@@ -25,19 +25,19 @@ export default async function Page({ searchParams }: Props) {
             <li key={business.id} className="flex items-start gap-10 mb-40">
               <dl className="flex-grow">
                 <dt className="mb-6">
-                  <Image
+                  {/* <Image
                     src={business.logo?.url as string}
                     alt=""
                     width={business.logo?.width}
                     height={business.logo?.height}
                     className="h-10 w-auto"
-                  />
+                  /> */}
                 </dt>
                 <dd className="text-sm">{business.description}</dd>
                 <dd className="flex mt-10">
-                  <ButtonLink href={business.link} isExternal>
+                  {/* <ButtonLink href={business.link} isExternal>
                     サービスサイトへ
-                  </ButtonLink>
+                  </ButtonLink> */}
                 </dd>
               </dl>
               <Image

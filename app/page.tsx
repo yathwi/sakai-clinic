@@ -19,15 +19,15 @@ export default async function Page() {
       <section className="relative flex items-center justify-center bg-black opacity-90 text-white overflow-hidden py-[200px]">
         <div>
           <h1 className="text-[3rem] font-bold text-center m-[1rem]">
-            テクノロジーの力で世界を変える
+            水の流れと共に『幸せ・感謝・楽しさ・感動』をお運び致します
           </h1>
-          <p className="text-center">
+          {/* <p className="text-center">
             私たちは市場をリードしているグローバルテックカンパニーです。
-          </p>
+          </p> */}
         </div>
         <Image
           className="absolute top-0 right-0 w-full h-[600px] object-cover object-right flex items-center justify-center z-[-1]"
-          src="/img-mv.jpg"
+          src="/sample-taikou2.jpg"
           alt=""
           width={3600}
           height={1200}
@@ -46,11 +46,13 @@ export default async function Page() {
             <h2 className="text-3xl font-bold">Business</h2>
             <p className="flex items-center space-x-5 mb-10">事業内容</p>
             <p className="mb-10">
-              当社は、次世代テクノロジーの研究開発・製造・販売を行う革新的な企業です。
+              当社は、戸建住宅や低層アパートを中心とした配管の工事・設計・管理や公共上下水道からの引き込み工事など水のインフラ整備を行なっています。
               <br />
-              AI、ロボット工学、自律システムなど、幅広い分野でのソリューション提供を通じて、社会の進化と未来の創造に貢献します。
+              その他、申請業務の代行を通した横のつながりを大切にし、お客様のご要望にお応えしています。
             </p>
-            <ButtonLink href="/business">もっとみる</ButtonLink>
+            <div className="w-60">
+              <ButtonLink href="/business">もっとみる</ButtonLink>
+            </div>
           </div>
           <Image
             className="w-[400px] rounded-[var(--border-radius)]"
@@ -75,31 +77,31 @@ export default async function Page() {
               <h2 className="text-3xl font-bold">About Us</h2>
               <p className="flex items-center space-x-5 mb-10">私たちについて</p>
               <p className="mb-10">
-                「テクノロジーの力で世界を変える」をミッションに掲げ、日々活動をしています。
+                水は生活する上で当たり前の様に有るものです。その「当たり前」を守ります。
               </p>
               <dl className="flex border-b border-[var(--color-border)] py-5">
                 <dt className="w-[100px] font-bold">社名</dt>
-                <dd className="flex-1">株式会社Simple</dd>
+                <dd className="flex-1">太光設備株式会社</dd>
               </dl>
               <dl className="flex border-b border-[var(--color-border)] py-5">
                 <dt className="w-[100px] font-bold">設立</dt>
-                <dd className="flex-1">2023年4月</dd>
+                <dd className="flex-1">2014年</dd>
               </dl>
               <dl className="flex border-b border-[var(--color-border)] py-5">
                 <dt className="w-[100px] font-bold">所在地</dt>
                 <dd className="flex-1">
-                  〒000-0000
+                  〒489-0842
                   <br />
-                  東京都渋谷区渋谷1-1-1
+                  愛知県瀬戸市小空町17番地の１
                 </dd>
               </dl>
               <dl className="flex border-b border-[var(--color-border)] py-5">
                 <dt className="w-[100px] font-bold">代表者</dt>
-                <dd className="flex-1">鈴木 太郎</dd>
+                <dd className="flex-1">日比野　太郎</dd>
               </dl>
               <dl className="flex border-b border-[var(--color-border)] py-5">
                 <dt className="w-[100px] font-bold">資本金</dt>
-                <dd className="flex-1">1,000万円</dd>
+                <dd className="flex-1">1,000,000円</dd>
               </dl>
             </div>
           </div>
@@ -108,12 +110,12 @@ export default async function Page() {
       <section className="w-[920px] mx-auto py-[100px]">
         <div className="flex justify-between items-start space-x-20">
           <div>
-            <h2 className="text-3xl font-bold">We are hiring</h2>
+            <h2 className="text-3xl font-bold">Recruit</h2>
             <p className="flex items-center space-x-5 mb-10">採用情報</p>
             <p className="mb-10">
-              当社では、チャレンジ精神を持った人材を求めています。
+              水は生活する上で当たり前の様に有るものです。その「当たり前」を守る会社。
               <br />
-              新しいアイデアを出し合い、成長する環境で活躍したい方は、ぜひご応募ください。当社でのキャリアを築きながら、技術の最前線で力を発揮しましょう。
+              水の流れと共に　幸せ・感謝・楽しさ・感動をお運び致します。
             </p>
             <ButtonLink href="">採用情報へ</ButtonLink>
           </div>
