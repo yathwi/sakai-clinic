@@ -14,6 +14,11 @@ export default function Menu() {
       <nav className={cx(styles.nav, isOpen && styles.open)}>
         <ul className={styles.items}>
           <li className=" hover:text-[#343434]">
+            <Link href="/" onClick={close}>
+              TOP
+            </Link>
+          </li>
+          <li className=" hover:text-[#343434]">
             <Link href="/news" onClick={close}>
               ニュース
             </Link>

@@ -18,8 +18,10 @@ export default async function Page() {
     <>
       <section className="relative flex items-center justify-center bg-black opacity-90 text-white overflow-hidden py-[200px]">
         <div>
-          <h1 className="text-[3rem] font-bold text-center m-[1rem]">
-            水の流れと共に『幸せ・感謝・楽しさ・感動』をお運び致します
+          <h1 className="text-[2.5rem] font-bold text-center m-[1rem]">
+            水の流れと共に
+            <br className=" leading-4" />
+            『幸せ・感謝・楽しさ・感動』を運ぶ
           </h1>
           {/* <p className="text-center">
             私たちは市場をリードしているグローバルテックカンパニーです。
@@ -27,7 +29,7 @@ export default async function Page() {
         </div>
         <Image
           className="absolute top-0 right-0 w-full h-[600px] object-cover object-right flex items-center justify-center z-[-1]"
-          src="/sample-taikou2.jpg"
+          src="/add/hero222.jpg"
           alt=""
           width={3600}
           height={1200}
@@ -55,8 +57,8 @@ export default async function Page() {
             </div>
           </div>
           <Image
-            className="w-[400px] rounded-[var(--border-radius)]"
-            src="/img-business.png"
+            className="h-[480px] rounded-[var(--border-radius)]"
+            src="/add/bussiness.jpg"
             alt=""
             width={1024}
             height={1024}
