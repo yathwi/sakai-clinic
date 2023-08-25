@@ -38,7 +38,7 @@ export default function Menu() {
               採用情報
             </Link>
           </li>
-          <li className=" hover:text-[#343434]">
+          <li className=" hover:text-[#343434] mr-10">
             <Link href="/contact" onClick={close}>
               お問い合わせ
             </Link>
