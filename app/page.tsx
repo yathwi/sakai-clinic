@@ -71,7 +71,7 @@ export default async function Page() {
             <Image
               className="w-full ml-[-60%] rounded-[var(--border-radius)]"
               src="/img-aboutus.jpg"
-              alt=""
+              alt="会社情報"
               width={6000}
               height={4000}
             />
@@ -123,8 +123,8 @@ export default async function Page() {
           </div>
           <Image
             className="w-[480px] rounded-[var(--border-radius)]"
-            src="/img-hiring.jpg"
-            alt=""
+            src="/recruit.jpg"
+            alt="採用"
             width={960}
             height={960}
           />
