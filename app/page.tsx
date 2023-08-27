@@ -18,7 +18,7 @@ export default async function Page() {
     <>
       <section className="relative flex items-center justify-center bg-black opacity-90 text-white overflow-hidden py-[200px]">
         <div>
-          <h1 className="text-[2.5rem] font-bold text-center m-[1rem]">
+          <h1 className="text-[3rem] font-bold text-center m-[1rem]">
             水の流れと共に
             <br className=" leading-4" />
             『幸せ・感謝・楽しさ・感動』を運ぶ
@@ -119,11 +119,11 @@ export default async function Page() {
               <br />
               水の流れと共に　幸せ・感謝・楽しさ・感動をお運び致します。
             </p>
-            <ButtonLink href="">採用情報へ</ButtonLink>
+            <ButtonLink href="/recruitment">採用情報へ</ButtonLink>
           </div>
           <Image
             className="w-[480px] rounded-[var(--border-radius)]"
-            src="/recruit.jpg"
+            src="/add/recruit.jpg"
             alt="採用"
             width={960}
             height={960}

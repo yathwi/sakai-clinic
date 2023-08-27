@@ -46,13 +46,13 @@ export default function ContactForm() {
       <div className={styles.horizontal}>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="lastname">
-            姓
+            姓<span className="text-red-500">*</span>
           </label>
           <input className={styles.textfield} type="text" id="lastname" ref={lastnameRef} />
         </div>
         <div className={styles.item}>
           <label className={styles.label} htmlFor="firstname">
-            名
+            名<span className="text-red-500">*</span>
           </label>
           <input className={styles.textfield} type="text" id="firstname" ref={firstnameRef} />
         </div>
@@ -65,13 +65,13 @@ export default function ContactForm() {
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="email">
-          メールアドレス
+          メールアドレス<span className="text-red-500">*</span>
         </label>
         <input className={styles.textfield} type="text" id="email" ref={emailRef} />
       </div>
       <div className={styles.item}>
         <label className={styles.label} htmlFor="message">
-          メッセージ
+          メッセージ<span className="text-red-500">*</span>
         </label>
         <textarea className={styles.textarea} id="message" ref={messageRef} />
       </div>

@@ -54,7 +54,7 @@ export default async function Page({ searchParams }: Props) {
       <footer className="flex flex-col items-center border-t pt-10 text-center gap-6">
         <h2 className="text-4xl font-bold">We are hiring</h2>
         <p>私たちは共にチャレンジする仲間を募集しています。</p>
-        <ButtonLink href="">採用情報へ</ButtonLink>
+        <ButtonLink href="/recruitment">採用情報へ</ButtonLink>
       </footer>
     </div>
   );

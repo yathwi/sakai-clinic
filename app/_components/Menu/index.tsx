@@ -34,7 +34,7 @@ export default function Menu() {
             </Link>
           </li>
           <li className=" hover:text-[#343434]">
-            <Link href="" onClick={close}>
+            <Link href="/recruitment" onClick={close}>
               採用情報
             </Link>
           </li>
