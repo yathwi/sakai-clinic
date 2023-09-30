@@ -22,7 +22,7 @@ export default async function Page({ searchParams }: Props) {
       ) : (
         <ul>
           {data.contents.map((business) => (
-            <li key={business.id} className="flex items-start gap-10 mb-40">
+            <li key={business.id} className="flex items-start gap-10 mb-20">
               <dl className="flex-grow">
                 <dt className="mb-6">
                   {/* <Image
@@ -33,12 +33,8 @@ export default async function Page({ searchParams }: Props) {
                     className="h-10 w-auto"
                   /> */}
                 </dt>
-                <dd className="text-sm">{business.description}</dd>
-                <dd className="flex mt-10">
-                  {/* <ButtonLink href={business.link} isExternal>
-                    サービスサイトへ
-                  </ButtonLink> */}
-                </dd>
+                <dd className=" font-bold">{business.title}</dd>
+                <dd className="text-sm mt-2">{business.description}</dd>
               </dl>
               <Image
                 src={business.image?.url as string}

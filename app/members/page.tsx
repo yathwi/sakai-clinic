@@ -25,7 +25,7 @@ export default async function Page({ searchParams }: Props) {
             <li key={member.id} className="flex items-start gap-10 mb-20">
               <Image
                 src={member.image?.url as string}
-                alt=""
+                alt="役職"
                 width={member.image?.width}
                 height={member.image?.height}
                 className="w-60 h-auto rounded-lg"

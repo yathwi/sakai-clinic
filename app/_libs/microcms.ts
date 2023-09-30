@@ -33,6 +33,7 @@ export type Member = {
 // 事業内容の型定義
 export type Business = {
   logo?: MicroCMSImage;
+  title: string;
   description: string;
   image?: MicroCMSImage;
   link: string;

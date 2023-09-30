@@ -69,11 +69,11 @@ export default async function Page() {
         <section className="w-[920px] mx-auto py-[100px]">
           <div className="flex justify-between items-start space-x-20">
             <Image
-              className="w-full ml-[-60%] rounded-[var(--border-radius)]"
-              src="/img-aboutus.jpg"
+              className="w-full ml-[-50%] rounded-[var(--border-radius)]"
+              src="/add/building.jpg"
               alt="会社情報"
-              width={6000}
-              height={4000}
+              width={4032}
+              height={3024}
             />
             <div>
               <h2 className="text-3xl font-bold">About Us</h2>

@@ -12,23 +12,27 @@ export default async function Page({ searchParams }: Props) {
         <tbody>
           <tr className="border-b">
             <th className="py-4 px-4 text-left">職種</th>
-            <td className="py-4 px-4">フロントエンドエンジニア</td>
+            <td className="py-4 px-4">土木作業員</td>
           </tr>
           <tr className="border-b">
             <th className="py-4 px-4 text-left">勤務地</th>
-            <td className="py-4 px-4">東京</td>
+            <td className="py-4 px-4">愛知県瀬戸市</td>
           </tr>
-          <tr className="border-b">
+          {/* <tr className="border-b">
             <th className="py-4 px-4 text-left">給与</th>
             <td className="py-4 px-4">年収600万円〜</td>
-          </tr>
+          </tr> */}
           <tr className="border-b">
             <th className="py-4 px-4 text-left">必要なスキル</th>
-            <td className="py-4 px-4">React, TypeScript, Next.js</td>
+            <td className="py-4 px-4">未経験OK</td>
           </tr>
-          <tr className="border-b">
+          {/* <tr className="border-b">
             <th className="py-4 px-4 text-left">勤務時間</th>
             <td className="py-4 px-4">9:00〜18:00</td>
+          </tr> */}{' '}
+          <tr className="border-b">
+            <th className="py-4 px-4 text-left">福利厚生</th>
+            <td className="py-4 px-4">社員旅行、社員行事（餅つき）</td>
           </tr>
         </tbody>
       </table>
