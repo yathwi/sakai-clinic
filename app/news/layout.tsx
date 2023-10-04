@@ -12,7 +12,7 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <>
-      <Hero title="News" sub="ニュース" />
+      <Hero title="News" sub="ニュース" src="/add/incompany.jpg" />
       <Sheet>{children}</Sheet>
     </>
   );
