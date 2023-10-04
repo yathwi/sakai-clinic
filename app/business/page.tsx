@@ -33,8 +33,8 @@ export default async function Page({ searchParams }: Props) {
                     className="h-10 w-auto"
                   /> */}
                 </dt>
-                <dd className=" font-bold">{business.title}</dd>
-                <dd className="text-sm mt-2">{business.description}</dd>
+                <dd className=" text-[20px] font-bold">{business.title}</dd>
+                <dd className="text-base mt-2">{business.description}</dd>
               </dl>
               <Image
                 src={business.image?.url as string}
