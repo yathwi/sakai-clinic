@@ -4,7 +4,7 @@ import styles from './not-found.module.css';
 export default function NotFound() {
   return (
     <>
-      <Hero title="404" sub="Not Found" />
+      <Hero title="404" sub="Not Found" src="/add/incompany.jpg" />
       <div className={styles.container}>
         <dl>
           <dt className={styles.title}>ページが見つかりませんでした</dt>
