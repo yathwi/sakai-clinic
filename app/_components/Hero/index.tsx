@@ -11,7 +11,7 @@ export default function Hero({ title, sub, src }: Props) {
   return (
     <section className={styles.container}>
       <div>
-        <h1 className="text-[3rem] font-bold align-middle mb-3 md:mt-20 mt-10 md:mb-16">{title}</h1>
+        <h1 className="text-[3rem] font-bold align-middle mb-3 md:mt-20 mt-10">{title}</h1>
         <p className=" flex items-center gap-20 mb-16 justify-center">{sub}</p>
       </div>
 
