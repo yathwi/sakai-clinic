@@ -22,7 +22,7 @@ export default async function Page({ searchParams }: Props) {
       ) : (
         <ul>
           {data.contents.map((member) => (
-            <li key={member.id} className="flex items-start gap-10 mb-20">
+            <li key={member.id} className="md:flex items-start gap-10 mb-10 mb:mb-20">
               <Image
                 src={member.image?.url as string}
                 alt="役職"

@@ -18,7 +18,7 @@ export default async function Page() {
     <>
       <section className="relative flex items-center justify-center bg-black opacity-90 text-white overflow-hidden py-[200px]">
         <div>
-          <h1 className="text-[3rem] font-bold text-center m-[1rem]">
+          <h1 className="md:text-[3rem] text-[2.5rem] font-bold text-center m-[1rem]">
             水の流れと共に
             <br className=" leading-4" />
             『幸せ・感謝・楽しさ・感動』を運ぶ
@@ -35,15 +35,15 @@ export default async function Page() {
           height={1200}
         />
       </section>
-      <section className="relative bg-white w-[840px] mt-[-40px] mx-auto py-6 px-10 rounded-[var(--border-radius)]">
+      <section className="relative bg-white max-w-[90%] md:[840px] mt-[-40px] mx-auto py-6 px-10 rounded-[var(--border-radius)]">
         <h2 className="text-lg">News</h2>
         <NewsList articles={data.contents} />
-        <div className="absolute right-[-40px] bottom-[-40px]">
+        <div className="absolute right-7 md:right-[-40px] bottom-[-40px]">
           <ButtonLink href="/news">もっとみる</ButtonLink>
         </div>
       </section>
-      <section className="w-[920px] mx-auto py-[100px]">
-        <div className="flex justify-between items-start space-x-20">
+      <section className="max-w-[90%]  md:w-[920px] mx-auto py-[100px]">
+        <div className="md:flex justify-between items-start space-x-20">
           <div>
             <h2 className="text-3xl font-bold">Business</h2>
             <p className="flex items-center space-x-5 mb-10">事業内容</p>
@@ -52,12 +52,13 @@ export default async function Page() {
               <br />
               その他、申請業務の代行を通した横のつながりを大切にし、お客様のご要望にお応えしています。
             </p>
-            <div className="w-60">
+            <div className=" -mt-[20px] w-60">
               <ButtonLink href="/business">もっとみる</ButtonLink>
             </div>
           </div>
+
           <Image
-            className="h-[480px] rounded-[var(--border-radius)]"
+            className="md:h-[480px] rounded-[var(--border-radius)]"
             src="/add/bussiness.jpg"
             alt=""
             width={1024}
@@ -66,15 +67,17 @@ export default async function Page() {
         </div>
       </section>
       <div className="bg-white">
-        <section className="w-[920px] mx-auto py-[100px]">
-          <div className="flex justify-between items-start space-x-20">
-            <Image
-              className="w-full ml-[-50%] rounded-[var(--border-radius)]"
-              src="/add/building.jpg"
-              alt="会社情報"
-              width={4032}
-              height={3024}
-            />
+        <section className="md:w-[920px] max-w-[90%] mx-auto md:py-[100px] py-[50px]">
+          <div className="md:flex justify-between items-start md:space-x-20">
+            <div className=" hidden md:block">
+              <Image
+                className="w-full ml-[-50%] rounded-[var(--border-radius)]"
+                src="/add/building.jpg"
+                alt="会社情報"
+                width={4032}
+                height={3024}
+              />
+            </div>
             <div>
               <h2 className="text-3xl font-bold">About Us</h2>
               <p className="flex items-center space-x-5 mb-10">私たちについて</p>
@@ -106,11 +109,25 @@ export default async function Page() {
                 <dd className="flex-1">1,000,000円</dd>
               </dl>
             </div>
+            <div className=" md:hidden block ">
+              <Image
+                className=" rounded-[var(--border-radius)]"
+                src="/add/building.jpg"
+                alt="会社情報"
+                width={4032}
+                height={3024}
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
+              />
+            </div>
           </div>
         </section>
       </div>
-      <section className="w-[920px] mx-auto py-[100px]">
-        <div className="flex justify-between items-start space-x-20">
+      <section className="max-w-[90%]  md:w-[920px] mx-auto py-[100px]">
+        <div className="md:flex justify-between items-start md:space-x-20">
           <div>
             <h2 className="text-3xl font-bold">Recruit</h2>
             <p className="flex items-center space-x-5 mb-10">採用情報</p>

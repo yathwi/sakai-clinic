@@ -22,27 +22,21 @@ export default async function Page({ searchParams }: Props) {
       ) : (
         <ul>
           {data.contents.map((business) => (
-            <li key={business.id} className="flex items-start gap-10 mb-20">
-              <dl className="flex-grow">
-                <dt className="mb-6">
-                  {/* <Image
-                    src={business.logo?.url as string}
-                    alt=""
-                    width={business.logo?.width}
-                    height={business.logo?.height}
-                    className="h-10 w-auto"
-                  /> */}
-                </dt>
+            <li key={business.id} className="md:flex items-start py-10 md:mb-10">
+              <dl className="flex-grow md:max-w-[50%]">
+                <dt className="mb-6"></dt>
                 <dd className=" text-[20px] font-bold">{business.title}</dd>
                 <dd className="text-base mt-2">{business.description}</dd>
               </dl>
-              <Image
-                src={business.image?.url as string}
-                alt=""
-                width={business.image?.width}
-                height={business.image?.height}
-                className="w-60 h-auto rounded-lg"
-              />
+              <div className=" md:w-80  max-w-[90%]  mx-auto">
+                <Image
+                  src={business.image?.url as string}
+                  alt=""
+                  width={business.image?.width}
+                  height={business.image?.height}
+                  className=" mt-5 md:mt-0 h-auto rounded-lg"
+                />
+              </div>
             </li>
           ))}
         </ul>

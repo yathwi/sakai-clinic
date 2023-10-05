@@ -11,8 +11,14 @@ export default function Menu() {
   const close = () => setOpen(false);
   return (
     <div>
-      <nav className={cx(styles.nav, isOpen && styles.open)}>
-        <ul className={styles.items}>
+      <nav
+        className={` ${
+          isOpen
+            ? 'fixed inset-0 bg-[var(--color-bg-painted)] text-[var(--color-text-unpainted)] '
+            : 'hidden md:block'
+        }`}
+      >
+        <ul className=" flex text-white gap-10">
           <li className=" hover:text-[#343434]">
             <Link href="/" onClick={close}>
               TOP
@@ -48,7 +54,7 @@ export default function Menu() {
           <Image src="/close.svg" alt="閉じる" width={24} height={24} priority />
         </button>
       </nav>
-      <button className={styles.button} onClick={open}>
+      <button className=" flex md:hidden cursor-pointer " onClick={open}>
         <Image src="/menu.svg" alt="メニュー" width={24} height={24} priority />
       </button>
     </div>

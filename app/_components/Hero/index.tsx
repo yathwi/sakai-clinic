@@ -11,10 +11,17 @@ export default function Hero({ title, sub, src }: Props) {
   return (
     <section className={styles.container}>
       <div>
-        <h1 className={styles.title}>{title}</h1>
-        <p className={styles.sub}>{sub}</p>
+        <h1 className="text-[3rem] font-bold align-middle mb-3 md:mt-20 mt-10 md:mb-16">{title}</h1>
+        <p className=" flex items-center gap-20 mb-16 justify-center">{sub}</p>
       </div>
-      <Image className={styles.bgimg} src={src} alt="" width={4000} height={1200} />
+
+      <Image
+        className="absolute top-0 right-0 w-full h-[600px] object-cover object-center flex items-center justify-center z-[-1]"
+        src={src}
+        alt="水の流れとともに幸せ・感謝・楽しさ・感動を運ぶ"
+        width={4000}
+        height={1200}
+      />
     </section>
   );
 }

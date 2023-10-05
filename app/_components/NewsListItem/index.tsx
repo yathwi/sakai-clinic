@@ -11,26 +11,30 @@ type Props = {
 export default function NewsListItem({ news }: Props) {
   return (
     <li className="border-b border-gray-200 last:border-b-0">
-      <Link className="flex items-start gap-10 py-6" href={`/news/${news.id}`}>
+      <Link className=" md:flex items-start gap-10 py-6" href={`/news/${news.id}`}>
         {news.thumbnail ? (
-          <Image
-            src={news.thumbnail?.url}
-            alt=""
-            className="w-48 h-auto rounded"
-            width={news.thumbnail?.width}
-            height={news.thumbnail?.height}
-          />
+          <div className="md:block hidden ">
+            <Image
+              src={news.thumbnail?.url}
+              alt=""
+              className=" w-48 h-auto rounded"
+              width={news.thumbnail?.width}
+              height={news.thumbnail?.height}
+            />
+          </div>
         ) : (
-          <Image
-            className="w-48 h-auto rounded"
-            src="/no-image.png"
-            alt="No Image"
-            width={1200}
-            height={630}
-          />
+          <div className="md:block hidden ">
+            <Image
+              className=" w-48 h-auto rounded"
+              src="/no-image.png"
+              alt="No Image"
+              width={1200}
+              height={630}
+            />
+          </div>
         )}
         <dl>
-          <dt className="text-lg font-bold ">{news.title}</dt>
+          <dt className="md:text-lg font-bold ">{news.title}</dt>
           <dd className="flex items-center gap-4">
             <Category category={news.category} />
             <PublishedDate date={news.publishedAt || news.createdAt} />
