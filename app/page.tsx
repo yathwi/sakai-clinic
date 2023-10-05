@@ -43,7 +43,7 @@ export default async function Page() {
         </div>
       </section>
       <section className="max-w-[90%]  md:w-[920px] mx-auto py-[100px]">
-        <div className="md:flex justify-between items-start space-x-20">
+        <div className="md:flex justify-between items-start md:space-x-20">
           <div>
             <h2 className="text-3xl font-bold">Business</h2>
             <p className="flex items-center space-x-5 mb-10">事業内容</p>
@@ -52,26 +52,27 @@ export default async function Page() {
               <br />
               その他、申請業務の代行を通した横のつながりを大切にし、お客様のご要望にお応えしています。
             </p>
-            <div className=" -mt-[20px] w-60">
+            <div className="  -mt-[20px] w-60">
               <ButtonLink href="/business">もっとみる</ButtonLink>
             </div>
           </div>
-
-          <Image
-            className="md:h-[480px] rounded-[var(--border-radius)]"
-            src="/add/bussiness.jpg"
-            alt=""
-            width={1024}
-            height={1024}
-          />
+          <div className=" mt-10">
+            <Image
+              className="md:h-[480px] rounded-[var(--border-radius)]"
+              src="/add/bussiness.jpg"
+              alt=""
+              width={1024}
+              height={1024}
+            />
+          </div>
         </div>
       </section>
       <div className="bg-white">
         <section className="md:w-[920px] max-w-[90%] mx-auto md:py-[100px] py-[50px]">
           <div className="md:flex justify-between items-start md:space-x-20">
-            <div className=" hidden md:block">
+            <div className=" hidden md:block w-full -ml-[50%]">
               <Image
-                className="w-full ml-[-50%] rounded-[var(--border-radius)]"
+                className=" "
                 src="/add/building.jpg"
                 alt="会社情報"
                 width={4032}
@@ -138,13 +139,15 @@ export default async function Page() {
             </p>
             <ButtonLink href="/recruitment">採用情報へ</ButtonLink>
           </div>
-          <Image
-            className="w-[480px] rounded-[var(--border-radius)]"
-            src="/add/recruit.jpg"
-            alt="採用"
-            width={960}
-            height={960}
-          />
+          <div className=" mt-10">
+            <Image
+              className="md:w-[480px] rounded-[var(--border-radius)]"
+              src="/add/recruit.jpg"
+              alt="採用"
+              width={960}
+              height={960}
+            />
+          </div>
         </div>
       </section>
     </>
