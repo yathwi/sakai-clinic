@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   title: 'Inmode',
 };
 
-export default async function InModeLayout({ children }: Props) {
+export default function InModeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
-      <PageHeader />
-      <div>{children}</div>
-      <Fotter />
-    </div>
+    <section>
+      <main>
+        <PageHeader />
+        <div>{children}</div>
+        <Fotter />
+      </main>
+    </section>
   );
 }
