@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import Script from 'next/script';
 import { getMeta } from '@/app/_libs/microcms';
-import Footer from '@/app/_components/Footer';
-import Header from '@/app/_components/Header';
+import { Fotter } from './_components/InMode/Fotter';
+import { PageHeader } from './_components/InMode/Pageheader';
 import './globals.css';
 import styles from './layout.module.css';
 import Favicon from '@/public/logo.png';
@@ -46,9 +46,9 @@ export default async function RootLayout({ children }: Props) {
         src={`//js.hs-scripts.com/${process.env.HUBSPOT_PORTAL_ID}.js`}
       ></Script>
       <body className={styles.body}>
-        <Header />
+        <PageHeader />
         <main>{children}</main>
-        <Footer />
+        <Fotter />
       </body>
     </html>
   );

@@ -3,9 +3,8 @@ import styles from './not-found.module.css';
 
 export default function NotFound() {
   return (
-    <>
-      <Hero title="404" sub="Not Found" src="/add/incompany.jpg" />
-      <div className={styles.container}>
+    <div className=" max-w-[414px]">
+      <div className=" py-40 bg-gray-300">
         <dl>
           <dt className={styles.title}>ページが見つかりませんでした</dt>
           <dd className={styles.text}>
@@ -15,6 +14,6 @@ export default function NotFound() {
           </dd>
         </dl>
       </div>
-    </>
+    </div>
   );
 }

@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 export const PageHeader = () => {
   return (
-    <div className="">
-      <div className=" fixed bg-white w-full py-2">
+    <div className=" ">
+      <div className=" fixed bg-white w-full py-2 max-w-[414px]">
         <div className=" flex justify-between w-[350px] ">
           <div className=" ml-5">
             <Image src="/logo.png" alt="" height={17} width={121} />
