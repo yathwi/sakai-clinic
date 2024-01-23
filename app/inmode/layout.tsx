@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 
 export default function InModeLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
-      <PageHeader />
-      <div>{children}</div>
-      <Fotter />
+    <main className=" flex justify-center bg-red-50">
+      <div className=" max-w-[414px]">
+        <PageHeader />
+        <div>{children}</div>
+        <Fotter />
+      </div>
     </main>
   );
 }

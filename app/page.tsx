@@ -28,7 +28,7 @@ export default async function Page() {
                   ガミースマイル
                 </a>
               </Link>
-            </div>{' '}
+            </div>
             <div className=" mt-10 text-center">
               <Link href="" legacyBehavior>
                 <a className=" py-5 text-white rounded-xl bg-green-500 hover:opacity-80  px-10">

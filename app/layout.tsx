@@ -28,9 +28,13 @@ export default async function RootLayout({ children }: Props) {
         src={`//js.hs-scripts.com/${process.env.HUBSPOT_PORTAL_ID}.js`}
       ></Script>
       <body className={styles.body}>
-        <PageHeader />
-        <main>{children}</main>
-        <Fotter />
+        <main className=" flex justify-center bg-red-50">
+          <div className=" max-w-[414px]">
+            <PageHeader />
+            <div>{children}</div>
+            <Fotter />
+          </div>
+        </main>
       </body>
     </html>
   );
