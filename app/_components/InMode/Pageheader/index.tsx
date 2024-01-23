@@ -10,9 +10,7 @@ export const PageHeader = () => {
           </div>
           <div className="">
             <Link href="/" legacyBehavior>
-              <a className=" hover:opacity-70">
-                <Image src="/inmode/cta_s.png" alt="" height={39} width={134} />
-              </a>
+              <a className=" hover:opacity-70">aa</a>
             </Link>
           </div>
         </div>

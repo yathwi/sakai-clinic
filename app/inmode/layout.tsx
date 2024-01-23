@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: 'Inmode',
+  title: 'インモード治療｜サカイクリニック62',
 };
 
 export default function InModeLayout({ children }: { children: React.ReactNode }) {

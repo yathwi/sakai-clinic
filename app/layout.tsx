@@ -9,28 +9,10 @@ import Favicon from '@/public/logo.png';
 
 export const revalidate = 60;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const data = await getMeta();
-  if (!data) {
-    return {};
-  }
-
-  return {
-    metadataBase: new URL(process.env.BASE_URL || 'http://localhost:3000'),
-    title: 'インモード',
-    description: data.description,
-    icons: [{ rel: 'icon', url: Favicon.src }],
-    openGraph: {
-      title: data.ogTitle,
-      description: data.ogDescription,
-      images: [data.ogImage?.url || ''],
-    },
-    alternates: {
-      canonical: data.canonical,
-    },
-  };
-}
-
+export const metadata: Metadata = {
+  title: 'サカイクリニック',
+  description: 'Inmode',
+};
 type Props = {
   children: React.ReactNode;
 };
