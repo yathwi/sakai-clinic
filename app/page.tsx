@@ -16,11 +16,11 @@ export default async function Page() {
   console.log(1, process.env.MICROCMS_API_KEY);
   console.log(111);
   return (
-    <div className=" max-w-[414px]">
-      <section className=" text-center">
-        <div className=" py-40 bg-slate-200 ">
+    <div className=" bg-slate-50  w-full flex justify-center">
+      <div className=" text-center">
+        <div className=" py-40  ">
           <p className="font-bold text-lg">ただいまサイトリニューアル中です</p>
-          <div className=" mt-10">
+          <div className=" mt-5">
             <p className="font-bold text-lg">準備済みコンテンツ</p>
             <div className=" mt-10 text-center">
               <Link href="" legacyBehavior>
@@ -38,7 +38,7 @@ export default async function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -27,9 +27,9 @@ export default async function RootLayout({ children }: Props) {
         defer
         src={`//js.hs-scripts.com/${process.env.HUBSPOT_PORTAL_ID}.js`}
       ></Script>
-      <body className={styles.body}>
-        <main className=" flex justify-center bg-red-50">
-          <div className=" max-w-[414px]">
+      <body>
+        <main className=" flex justify-center  bg-red-50">
+          <div className=" w-[414px]">
             <PageHeader />
             <div>{children}</div>
             <Fotter />

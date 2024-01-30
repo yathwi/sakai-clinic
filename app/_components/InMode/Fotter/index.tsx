@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const Fotter = () => {
   return (
-    <div className=" bg-[#F5FFEC] max-w-[414px] py-10 text-[#B3B3B3]">
+    <div className=" bg-[#F5FFEC] max-w-[414px] fixed py-10 text-[#B3B3B3]">
       <div className=" text-center">
         <div className=" flex justify-center">
           <Image src="/logo.png" height={20} width={200} alt="" />

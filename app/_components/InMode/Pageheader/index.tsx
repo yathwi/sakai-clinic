@@ -4,9 +4,9 @@ export const PageHeader = () => {
   return (
     <div className=" ">
       <div className=" fixed bg-white w-full py-2 max-w-[414px]">
-        <div className=" flex justify-between w-[350px] ">
+        <div className=" flex justify-between w-[390px] ">
           <div className=" ml-5">
-            <Image src="/logo.png" alt="" height={17} width={121} />
+            <Image src="/InMode2/logo.png" alt="" height={37} width={148} />
           </div>
           <div className="">
             <Link href="/" legacyBehavior>
