@@ -36,6 +36,9 @@ export const Info: React.FC = () => {
               );
             })}
           </div>
+          <div className=" mt-5 mx-5">
+            <Image src="/gummy-smile2/map.jpg" height={500} alt="" width={414} />
+          </div>
         </div>
       </div>
     </div>
