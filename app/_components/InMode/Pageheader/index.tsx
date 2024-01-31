@@ -4,8 +4,8 @@ export const PageHeader = () => {
   return (
     <div className=" ">
       <div className=" fixed bg-white w-full py-3 max-w-[414px]">
-        <div className=" flex justify-between w-[390px] ">
-          <div className=" ml-5">
+        <div className=" flex justify-between px-5 ">
+          <div className="">
             <Image src="/InMode2/logo.png" alt="" height={37} width={148} />
           </div>
           <div className="">
