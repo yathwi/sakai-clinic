@@ -58,7 +58,7 @@ const Page = () => {
           />
         </div>
         <Image src="/InMode2/8price-2.jpg" height={500} alt="" width={414} />{' '}
-        <div className=" -mt-60 mb-10 px-5 flex justify-center">
+        <div className=" -mt-52 mb-10 px-5 flex justify-center">
           <Link href="https://line.me/R/ti/p/@202sazng?from=page&accountId=202sazng" legacyBehavior>
             <a className=" hover:opacity-80">
               <Image
