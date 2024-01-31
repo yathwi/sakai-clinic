@@ -5,7 +5,7 @@ export const Fotter = () => {
     <div className=" bg-[#FFFAEC] max-w-[414px] w-full py-10 text-[#B3B3B3]">
       <div className=" text-center">
         <div className=" flex justify-center">
-          <Image src="/inmode2/logo1.png" height={20} width={200} alt="" />
+          <Image src="/InMode2/logo1.png" height={20} width={200} alt="" />
         </div>
         <p className="mt-5">Copyright © 2019 Sakai Clinic 62</p>
         <p>
