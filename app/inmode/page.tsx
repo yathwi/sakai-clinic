@@ -77,7 +77,7 @@ const Page = () => {
           width={414}
         />
         <Image src="/InMode2/10flow_about.jpg" height={500} alt="ご利用の流れ" width={414} />
-        <div className=" m-10 ">
+        <div className=" my-10 mx-5 ">
           <Image src="/InMode2/11doctor.jpg" height={500} alt="院長の紹介" width={414} />
         </div>
         <div className=" mx-5">
