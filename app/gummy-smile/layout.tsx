@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: 'Inmode',
+  title: 'ガミースマイル|サカイクリニック62',
 };
 
 export default function InModeLayout({ children }: { children: React.ReactNode }) {
@@ -15,7 +15,7 @@ export default function InModeLayout({ children }: { children: React.ReactNode }
       <div className=" max-w-[414px]">
         <PageHeader />
         <div>{children}</div>
-        <Fotter />
+        {/* <Fotter /> */}
       </div>
     </main>
   );
