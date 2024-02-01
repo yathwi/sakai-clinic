@@ -1,9 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Gothic_A1 } from 'next/font/google';
+import { Gothic_A1, Hina_Mincho } from 'next/font/google';
 import { Info } from '../_components/InMode/info';
 
 const gothic = Gothic_A1({
+  display: 'swap',
+  weight: '400',
+  style: 'normal',
+  subsets: ['latin'],
+});
+
+const hina = Hina_Mincho({
   display: 'swap',
   weight: '400',
   style: 'normal',
@@ -21,8 +28,8 @@ const Page = () => {
           </a>
         </Link>
       </div>
-      <div className=" py-10 flex justify-center px-10">
-        <Image src="/gummy-smile2/3award.jpg" height={374} alt="" width={114} />
+      <div className=" py-10 flex justify-center">
+        <Image src="/gummy-smile2/3award.jpg" height={114} alt="" width={374} />
       </div>
       <Image src="/gummy-smile2/4Main.png" height={919} alt="" width={414} />
       <Image src="/gummy-smile2/5customer.jpg" height={2441} alt="" width={414} />
@@ -68,7 +75,13 @@ const Page = () => {
                 legacyBehavior
               >
                 <a className=" hover:opacity-80">
-                  <Image src="/gummy-smile2/11menu03-card.png" height={198} alt="" width={380} />{' '}
+                  z
+                  <Image
+                    src="/gummy-smile2/11menu03-card.png"
+                    height={198}
+                    alt=""
+                    width={380}
+                  />{' '}
                 </a>
               </Link>
             </div>
@@ -76,15 +89,22 @@ const Page = () => {
         </div>
       </div>
       <div className=" text-center my-7">
-        <p className=" text-[#D16D6A]">＼まずはご相談ください！／</p>
+        <p className={` text-[#D16D6A] text-xl ${hina.className}`}>
+          ＼　まずはご相談ください！　／
+        </p>
         <Link href="https://line.me/R/ti/p/@202sazng?from=page&accountId=202sazng" legacyBehavior>
-          <a className=" hover:opacity-80 flex justify-center mt-5">
-            <Image src="/gummy-smile2/2CTA.png" height={500} alt="" width={250} />
+          <a className=" hover:opacity-80 flex justify-center mt-3">
+            <Image src="/gummy-smile2/2CTA.png" height={112} alt="" width={326} />
           </a>
         </Link>
-        <p className=" text-[#D16D6A] text-xs w-60 mx-auto font-thin">
-          ※ 別途治療において必要な際にはレントゲン、他などの 　 検査代金がかかります。
-        </p>
+        <div className=" mx-auto w-80">
+          <p className=" text-[#D16D6A] mt-2 text-[10px] text-left mx-auto font-thin">
+            ※ 別途治療において必要な際にはレントゲン、他などの
+            <br className="" />
+            <span className=" ml-4" />
+            検査代金がかかります。
+          </p>
+        </div>
       </div>
       <Image src="/gummy-smile2/12faq.jpg" height={500} alt="" width={414} />
       <div className=" mt-5 mx-5">
