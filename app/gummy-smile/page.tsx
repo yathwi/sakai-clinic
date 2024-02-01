@@ -25,7 +25,7 @@ const Page = () => {
         <Image src="/gummy-smile2/3award.jpg" height={500} alt="" width={340} />
       </div>
       <Image src="/gummy-smile2/4Main.png" height={500} alt="" width={414} />
-      <Image src="/gummy-smile2/5Customer.jpg" height={500} alt="" width={414} />
+      <Image src="/gummy-smile2/5customer.jpg" height={500} alt="" width={414} />
       <Image src="/gummy-smile2/6reason.jpg" height={500} alt="" width={414} />
 
       <Image src="/gummy-smile2/7about.jpg" height={500} alt="" width={414} />
