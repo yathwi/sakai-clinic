@@ -30,9 +30,8 @@ export default async function RootLayout({ children }: Props) {
       <body>
         <main className=" flex justify-center  bg-red-50">
           <div className=" w-[414px]">
-            <PageHeader />
+            {/* <PageHeader /> */}
             <div>{children}</div>
-            <Fotter />
           </div>
         </main>
       </body>

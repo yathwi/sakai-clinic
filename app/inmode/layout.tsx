@@ -13,9 +13,9 @@ export default function InModeLayout({ children }: { children: React.ReactNode }
   return (
     <main className=" flex justify-center bg-red-50">
       <div className=" max-w-[414px]">
-        <PageHeader />
+        {/* <PageHeader /> */}
         <div>{children}</div>
-        {/* <Fotter /> */}
+        <Fotter />
       </div>
     </main>
   );
