@@ -50,7 +50,11 @@ export const Info: React.FC = () => {
             })}
           </div>
           <div className=" mt-5 mx-5">
-            <Image src="/gummy-smile2/map.jpg" height={500} alt="" width={414} />
+            <Link href="https://maps.app.goo.gl/PvbDZWagD7gBigbS6" legacyBehavior>
+              <a>
+                <Image src="/gummy-smile2/map.jpg" height={500} alt="" width={414} />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

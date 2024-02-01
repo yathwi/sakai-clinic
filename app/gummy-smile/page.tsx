@@ -75,13 +75,7 @@ const Page = () => {
                 legacyBehavior
               >
                 <a className=" hover:opacity-80">
-                  z
-                  <Image
-                    src="/gummy-smile2/11menu03-card.png"
-                    height={198}
-                    alt=""
-                    width={380}
-                  />{' '}
+                  <Image src="/gummy-smile2/11menu03-card.png" height={198} alt="" width={380} />{' '}
                 </a>
               </Link>
             </div>
