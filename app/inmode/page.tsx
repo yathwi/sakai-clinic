@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fotter } from '../_components/InMode/Fotter';
+import { Info } from '../_components/InMode/info';
 
 const Page = () => {
   return (
@@ -80,9 +81,7 @@ const Page = () => {
         <div className=" my-10 mx-5 ">
           <Image src="/InMode2/11doctor.jpg" height={500} alt="院長の紹介" width={414} />
         </div>
-        <div className=" mx-5">
-          <Image src="/InMode2/12clinic.jpg" height={500} alt="クリニック情報" width={414} />
-        </div>
+        <Info />
         <div className=" mt-10 flex justify-center">
           <Link href="https://line.me/R/ti/p/@202sazng?from=page&accountId=202sazng" legacyBehavior>
             <a className=" hover:opacity-80">
