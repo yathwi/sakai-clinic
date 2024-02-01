@@ -23,14 +23,14 @@ export default async function Page() {
           <div className=" mt-5">
             <p className="font-bold text-lg">準備済みコンテンツ</p>
             <div className=" mt-10 text-center">
-              <Link href="" legacyBehavior>
+              <Link href="/gummy-smile" legacyBehavior>
                 <a className=" py-5 text-white rounded-xl bg-green-500 hover:opacity-80  px-10">
                   ガミースマイル
                 </a>
               </Link>
             </div>
             <div className=" mt-10 text-center">
-              <Link href="" legacyBehavior>
+              <Link href="/inmode" legacyBehavior>
                 <a className=" py-5 text-white rounded-xl bg-green-500 hover:opacity-80  px-10">
                   インモード
                 </a>

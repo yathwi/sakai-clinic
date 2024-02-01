@@ -1,5 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Shippori_Mincho_B1 } from 'next/font/google';
+
+const shippori = Shippori_Mincho_B1({
+  display: 'swap',
+  weight: '400',
+  style: 'normal',
+  subsets: ['latin'],
+});
 
 const items = [
   { title: 'アクセス', content1: 'JR・地下鉄 渋谷駅から徒歩7分', content2: '' },
@@ -16,17 +24,22 @@ export const Info: React.FC = () => {
   return (
     <div className=" bg-white">
       <div className="  text-center mx-5 py-5">
-        <div className="bg-[#FBF3E7] py-10">
-          <h2 className=" text-xl font-light">クリニック情報</h2>
+        <div className="bg-[#FBF3E7] py-10 shadow-lg">
+          <h2 className={`text-2xl  ${shippori.className} `}>クリニック情報</h2>
+          <div className=" flex justify-center mt-10 mb-5">
+            <Image src="/gummy-smile2/pic.jpg" width={319} height={179} alt="" />
+          </div>
           <div className="w-full">
             {items.map((item) => {
               return (
                 <div className=" mx-auto mt-5 w-80" key={item.title}>
                   <h3 className=" bg-[#EEE1D0]">{item.title}</h3>
                   {item.title === '公式HP' ? (
-                    <Link href={item.content1} legacyBehavior>
-                      <a className=" text-blue-300 underline">{item.content1}</a>
-                    </Link>
+                    <div className="mt-2">
+                      <Link href={item.content1} legacyBehavior>
+                        <a className="  text-blue-300 underline">{item.content1}</a>
+                      </Link>
+                    </div>
                   ) : (
                     <p className="mt-2">{item.content1}</p>
                   )}
