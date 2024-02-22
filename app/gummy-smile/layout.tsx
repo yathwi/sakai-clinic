@@ -4,9 +4,20 @@ import { Metadata } from 'next';
 type Props = {
   children: React.ReactNode;
 };
+const siteName = 'サイト名';
+const description = 'サイトの説明';
+const url = 'https://本番のドメイン';
 
 export const metadata: Metadata = {
   title: 'ガミースマイル|サカイクリニック62',
+  openGraph: {
+    title: siteName,
+    description,
+    url,
+    siteName,
+    locale: 'ja_JP',
+    type: 'website',
+  },
 };
 
 export default function InModeLayout({ children }: { children: React.ReactNode }) {

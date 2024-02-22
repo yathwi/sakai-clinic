@@ -33,7 +33,7 @@ const Page = () => {
       </div>
       <Image src="/gummy-smile2/4Main.png" height={919} alt="" width={414} />
       <Image src="/gummy-smile2/5customer.jpg" height={2441} alt="" width={414} />
-      <Image src="/gummy-smile2/6reason.jpg" height={1809} alt="" width={414} />
+      <Image src="/gummy-smile2/6reason-2.jpg" height={1743} alt="" width={414} />
 
       <Image src="/gummy-smile2/7about.jpg" height={409} alt="" width={414} />
       <div>
