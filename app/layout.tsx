@@ -11,7 +11,8 @@ export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: 'サカイクリニック',
-  description: 'Inmode',
+  description:
+    '渋谷の医療法人社団 サカイクリニック62です。ホワイトニング・インビザライン・矯正歯科・美容皮膚科・医療エステ・顎関節症治療など皆様が本来持っている美しさを取り戻すお手伝いをさせていただきます。',
 };
 type Props = {
   children: React.ReactNode;
