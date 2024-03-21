@@ -14,7 +14,10 @@ const Page = () => {
           width={414}
         />
         <div className=" -mt-10 flex justify-center">
-          <Link href="https://line.me/ti/p/%40202sazng" legacyBehavior>
+          <Link
+            href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+            legacyBehavior
+          >
             <a className=" hover:opacity-80">
               <Image
                 src="/InMode2/2CTA.png"
@@ -26,7 +29,10 @@ const Page = () => {
           </Link>
         </div>
         <div className=" py-5 flex justify-center px-10">
-          <Link href="https://line.me/ti/p/%40202sazng" legacyBehavior>
+          <Link
+            href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+            legacyBehavior
+          >
             <a className=" hover:opacity-80">
               <Image
                 src="/InMode2/3LINE.jpg"
@@ -60,7 +66,10 @@ const Page = () => {
         </div>
         <Image src="/InMode2/8price-2.jpg" height={500} alt="" width={414} />{' '}
         <div className=" -mt-52 mb-10 px-5 flex justify-center">
-          <Link href="https://line.me/ti/p/%40202sazng" legacyBehavior>
+          <Link
+            href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+            legacyBehavior
+          >
             <a className=" hover:opacity-80">
               <Image
                 src="/InMode2/2CTA.png"
@@ -83,7 +92,10 @@ const Page = () => {
         </div>
         <Info />
         <div className=" mt-10 flex justify-center">
-          <Link href="https://line.me/ti/p/%40202sazng" legacyBehavior>
+          <Link
+            href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+            legacyBehavior
+          >
             <a className=" hover:opacity-80">
               <Image
                 src="/InMode2/2CTA.png"
@@ -95,7 +107,10 @@ const Page = () => {
           </Link>
         </div>
         <div className=" py-5 flex justify-center px-10">
-          <Link href="https://line.me/ti/p/%40202sazng" legacyBehavior>
+          <Link
+            href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+            legacyBehavior
+          >
             <a className=" hover:opacity-80">
               <Image
                 src="/InMode2/3LINE.jpg"

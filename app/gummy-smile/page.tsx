@@ -22,7 +22,10 @@ const Page = () => {
     <div className={` max-w-[414px] mt-12 bg-white ${gothic.className}`}>
       <Image src="/gummy-smile2/1MV.jpg" height={586} alt="" width={414} />
       <div className=" -mt-20 flex justify-center">
-        <Link href="https://lstep.app/vaaWF8C" legacyBehavior>
+        <Link
+          href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+          legacyBehavior
+        >
           <a className=" hover:opacity-80">
             <Image src="/gummy-smile2/2CTA.png" height={112} alt="" width={326} />
           </a>
@@ -44,7 +47,10 @@ const Page = () => {
           <div className=" mt-5">
             <Image src="/gummy-smile2/9menu01-1.jpg" height={757} alt="" width={386} />{' '}
             <div className=" mt-5">
-              <Link href="https://lstep.app/vaaWF8C" legacyBehavior>
+              <Link
+                href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+                legacyBehavior
+              >
                 <a className=" hover:opacity-80">
                   <Image src="/gummy-smile2/9menu01-card.png" height={198} alt="" width={380} />{' '}
                 </a>
@@ -54,7 +60,10 @@ const Page = () => {
           <div className=" mt-10">
             <Image src="/gummy-smile2/10menu02-1.jpg" height={673} alt="" width={386} />{' '}
             <div className=" mt-5">
-              <Link href="https://lstep.app/vaaWF8C" legacyBehavior>
+              <Link
+                href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+                legacyBehavior
+              >
                 <a className=" hover:opacity-80">
                   <Image src="/gummy-smile2/10menu02-card.png" height={198} alt="" width={380} />{' '}
                 </a>
@@ -64,7 +73,10 @@ const Page = () => {
           <div className=" mt-10">
             <Image src="/gummy-smile2/11menu03-1.jpg" height={631} alt="" width={380} />{' '}
             <div className=" mt-5">
-              <Link href="https://lstep.app/vaaWF8C" legacyBehavior>
+              <Link
+                href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+                legacyBehavior
+              >
                 <a className=" hover:opacity-80">
                   <Image src="/gummy-smile2/11menu03-card.png" height={198} alt="" width={380} />{' '}
                 </a>
@@ -77,7 +89,10 @@ const Page = () => {
         <p className={` text-[#D16D6A] text-xl ${hina.className}`}>
           ＼　まずはご相談ください！　／
         </p>
-        <Link href="https://lstep.app/vaaWF8C" legacyBehavior>
+        <Link
+          href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
+          legacyBehavior
+        >
           <a className=" hover:opacity-80 flex justify-center mt-3">
             <Image src="/gummy-smile2/2CTA.png" height={112} alt="" width={326} />
           </a>

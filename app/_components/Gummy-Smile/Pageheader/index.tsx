@@ -10,7 +10,7 @@ export const PageHeader = () => {
           </div>
           <div className="">
             <Link
-              href="https://line.me/R/ti/p/@202sazng?from=page&accountId=202sazng"
+              href="https://liff.line.me/1657461637-07NVoM5D/landing?follow=%40202sazng&lp=ppItoT&liff_id=1657461637-07NVoM5D"
               legacyBehavior
             >
               <a className=" hover:opacity-70">
